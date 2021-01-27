@@ -1,0 +1,11 @@
+﻿@page "/"
+
+<div class="mx-auto" style="width: 200px;">
+    <div class="field">
+        <label class="label">Dato</label>
+        <div class="control">
+            <input class="input" type="text" placeholder="OCR" autofocus @bind-value="InputTextF" @ref="InputTextRef"/>
+        </div>
+        <p class="help">@InputTextF</p>
+    </div>
+</div>

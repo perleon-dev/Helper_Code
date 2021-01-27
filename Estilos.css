@@ -1,0 +1,5 @@
+/* Bulma Framework */
+/* agregamos un trabuto a la clase hero, el resultado sera una imagen responsiva */
+.hero {
+	background: url(images/hero-1.jpg) center / cover;
+}
