@@ -67,5 +67,26 @@ namespace Utilitario
 
             return validate;
         }
+
+        // Valida DateTime
+        public static string ValidateDateTime(dynamic date) 
+        {
+            DateTime temp;
+            if (date != null)
+            {
+                if (DateTime.TryParse(date.ToString(), out temp))
+                {
+                    return date.ToString();
+                }
+                else
+                {
+                    return string.Empty;
+                }
+            }
+            else
+            {
+                return string.Empty;
+            }
+        }
     }
 }
